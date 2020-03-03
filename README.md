@@ -1,4 +1,4 @@
-# LINK : bit.ly/basawalikanjogja
+# LINK : bit.ly/penerjemahbasawalikan
 
 # Penerjemah Basa Walikan Jogja
 adalah layanan penerjemah basa Walikan Jogja gratis. Untuk menerjemahkan teks tertulis dari lain bahasa ke basa walikan khas Jogja dan sebaliknya.
