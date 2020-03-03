@@ -1,0 +1,331 @@
+<!DOCTYPE HTML>
+<!--
+	Sugeng Ndalu
+-->
+<html>
+	<head>
+		<title>Penerjemah Basa Walikan Jogja</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="main.css"/>
+    <script src="https://kit.fontawesome.com/8bb79aff4b.js"></script>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+
+							<!-- Menu -->
+								<nav id="menu">
+									<header class="major">
+										<h2>Menu</h2>
+									</header>
+									<ul>
+										<li><a href="#" title="Kembali ke Beranda">Beranda</a></li>
+										<li><a href="http://bit.ly/apaitudagadu" title="Cari di Google">Apa itu Basa Walikan Jogja?</a></li>
+										<li><a href="http://bit.ly/apaituhanacaraka" title="Sumber Wikipedia">Apa itu Hanacaraka?</a></li>
+									</ul>
+								</nav>
+
+							<!-- Footer -->
+								<footer id="footer">
+									<p class="copyright">&copy; Dirancang dengan &#10084; oleh Donquixotella.</p>
+								</footer>
+
+						</div>
+					</div>
+
+				<!-- Main -->
+					<div id="main">
+						
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="#" class="logo"><strong>Penerjemah Basa Walikan Jogja</strong></a>
+									<ul class="icons">
+										<li><a href="http://bit.ly/quixotellatwitter" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+									</ul>
+								</header>
+
+							<!-- Content -->
+								<section>
+									<header class="main">
+										<h1>APA ITU BASA WALIKAN JOGJA?</h1>
+									</header>
+
+									<!-- Content -->
+										<!-- Begin Wrapper -->
+
+<!-- Begin Script Row -->
+<script type='text/javascript'>
+function dagadu() {
+ var result = dagaduString(document.f.original.value);
+ document.f.terdagadu.value = result;
+}
+function dagaduString(aString) {
+ aString = aString.toLowerCase();
+ var last = aString.length;
+ var result = "";
+ for (var i = 0; i < last ; i++) {
+  var tesdua = 'n';
+  var siji = '';
+  var loro = '';
+  var balik = '';
+  var ojonambah = 'n';
+  siji = aString.charAt(i);
+  if(i == 0) {
+   if(siji == 'a') {
+    balik = 'pa';
+    tesdua = 'y';
+    ojonambah = 'y';
+   }
+   if(siji == 'e') {
+    balik = 'pe';
+    tesdua = 'y';
+    ojonambah = 'y';
+   }
+   if(siji == 'i') {
+    balik = 'pi';
+    tesdua = 'y';
+    ojonambah = 'y';
+   }
+   if(siji == 'o') {
+    balik = 'po';
+    tesdua = 'y';
+    ojonambah = 'y';
+   }
+   if(siji == 'u') {
+    balik = 'pu';
+    tesdua = 'y';
+    ojonambah = 'y';
+   }
+   if(siji == 'p') {
+    balik = '';
+    tesdua = 'y';
+    ojonambah = 'y';
+   }
+  }
+  if(i < last-1) {
+   loro = aString.charAt(i+1);
+   if(siji == 'n' && loro == 'y') {
+    balik = 'k';
+    tesdua = 'y';
+   }
+   if(siji == 'n' && loro == 'g') {
+    balik = 'l';
+    tesdua = 'y';
+   }
+   if(siji == 'd' && loro == 'h') {
+    balik = 'n';
+    tesdua = 'y';
+   }
+   if(siji == 't' && loro == 'h') {
+    balik = 'w';
+    tesdua = 'y';
+   }
+  }
+  if(i == last-1) {
+    if(siji == 't'){
+      balik = 'n';
+      tesdua = 'y';
+    }
+  }
+  if(tesdua == 'y') {
+   result += balik;
+   if(ojonambah == 'n')
+    i++;
+  }
+  else result += dagaduChar(aString.charAt(i))
+ }
+ return result;
+}
+function dagaduChar(c) {
+ if (c == 'a') {
+  return 'a'
+ }
+ else if (c == 'ng') {
+  return 'l'
+ }
+ else if (c == 'dh') {
+  return 'n'
+ }
+ else if (c == 'th') {
+  return 'w'
+ }
+ else if (c == 'ny') {
+  return 'k'
+ }
+ else if (c == 'b') {
+  return 's'
+ }
+ else if (c == 'c') {
+  return 'j' 
+ }
+ else if (c == 'd') {
+  return 'm'
+ }
+ else if (c == 'e') {
+  return 'e'
+ }
+ else if (c == 'f') {
+  return 'h' 
+ }
+ else if (c == 'g') {
+  return 't'
+ }
+ else if (c == 'h') {
+  return 'p'
+ }
+ else if (c == 'i') {
+  return 'i'
+ }
+ else if (c == 'j') {
+  return 'c'
+ }
+ else if (c == 'k') {
+  return 'ny'
+ }
+ else if (c == 'l') {
+  return 'ng'
+ }
+ else if (c == 'm') {
+  return 'd'
+ }
+ else if (c == 'n') {
+  return 'dh'
+ }
+ else if (c == 'o') {
+  return 'o'
+ }
+ else if (c == 'p') {
+  return 'h'
+ }
+ else if (c == 'q') {
+  return 's'
+ }
+ else if (c == 'r') {
+  return 'y'
+ }
+ else if (c == 's') {
+  return 'b'
+ }
+ else if (c == 't') {
+  return 'g'
+ }
+ else if (c == 'u') {
+  return 'u'
+ }
+ else if (c == 'v') {
+  return 'h'
+ }
+ else if (c == 'w') {
+  return 'th'
+ }
+ else if (c == 'x') {
+  return 'x'
+ }
+ else if (c == 'y') {
+  return 'r'
+ }
+ else if (c == 'z') {
+  return 'z'
+ }
+ return c;
+}
+</script>
+
+<!-- End Script Row -->
+
+        <!-- Begin 1st Row -->
+
+        <div class="entry">
+          <p align="justify">Basa Walikan Jogja adalah bahasa gaul daerah Jogja atau Yogyakarta yang bisa disebut bahasa slang yang menggunakan rumus dari Hanacaraka.<br><br> Dan ini adalah layanan penerjemah basa walikan gratis. Untuk menerjemahkan teks tertulis dari lain bahasa ke basa walikan dan sebaliknya.</p>
+          <p>Selamat mencoba.</p>
+        </div><br>
+
+        <!-- End 1st Row -->
+
+<!-- Begin CSS Kode Row -->
+<style type="text/css">
+  
+input{width:228px; height: 30px;vertical-align: center; text-align: center; color:#fafafa;padding:8px 12px;border-radius:3px; font-size: 15px; font-weight: bold;}
+textarea{width:100%;background:#ececec;font-size:15px;}
+.entry {
+  font-size: 16px;
+}
+.bungkus-duwur {
+ position:relative;
+ width: ;
+ padding:16px 20px;
+ background-color:#8e44ad;
+ color:#fff;
+ text-align:center;
+ line-height:1.5em;
+ font-size:15px;
+ border:1px solid #8e44ad;
+ border-radius:5px 5px 0 0;
+}
+.bungkus-dagadu {
+ background:#ffffff;
+ height: 600px;
+ border:1px solid #8e44ad;
+ border-radius:0 0 5px 5px;
+ padding:30px;
+ text-align:center;
+}
+@media screen and (max-width:680px){
+    #maincontent{
+        width: auto;
+        float: none;
+    }
+    #sidebar{
+        width: auto;
+        float: none;
+    }
+ }
+    @media screen and (max-width: 480px){
+        #header{
+            height: auto;
+        }
+        #sidebar{
+            display: none;
+        }
+    }
+</style>
+<!-- End CSS Kode Row -->
+
+        <!-- Begin Translate Row -->
+<div class="bungkus-duwur">
+PENERJEMAH BASA WALIKAN JOGJA</div>
+<div class="bungkus-dagadu">
+<form name="f">
+<p align="left"><b>BAHASA APAPUN:</b></p> 
+<textarea cols="5" placeholder="Input teks yang akan dikonversi, bisa bahasa apa saja." name="original" rows="5"></textarea>
+<br />
+<br />
+<input onclick="dagadu()" type="button" value="Konversi Dagadu" title="KLIK AKU PAK" />
+<br>
+<p align="left">
+<b>BASA WALIKAN :</b></p>
+<textarea cols="5" placeholder="Teks yang sudah terkonversi" name="terdagadu" rows="5"></textarea>
+</form>
+</div> <br>
+<div align="center" id="message"><a href="#top" id="top-link" title="Kembali ke Atas"><b>KEMBALI KE ATAS</b></a></div>
+        <!-- End Translate Row -->
+
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+<br>
+	</body>
+	
+</html>
